@@ -1,7 +1,12 @@
+
 #navContainer {
     background-color: aquamarine;
 }
 
+.container {
+    background: linear-gradient(135deg,#f0fffc, #e6f7f5);
+
+}
 .component{
     display:flex;
     flex-direction:column;
@@ -27,8 +32,5 @@
     display:flex;
     justify-content:center;
     align-items:center;
-
-    color:white;
-    font-weight:bold;
 }
 
