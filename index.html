@@ -21,23 +21,36 @@
 </nav>
 
 <!--Hero-->
-<div class = "heroSection">
-    <p>The Students' Union Management System</p>
-    <P>The all-in one platform built to connect memberships, opportunities, services, and student engagement all in one platform</P>
-     <h4>LESS TIME MANAGING SYSTEMS, <p>MORE TIME SUPPORTING STUDENTS</p></h4>
-     <img src = "sums_iphone.png" class = heroImage>
-     <button>Contact Us</button>
-</div>
-<br>
+<section class = "heroSection py-5">
+    <div class = "container"> 
+    <div class = "row align-items-center">
+        <div class = "col-lg-6">
+       <p>The Students' Union Management System</p>  
+      <p>The all-in one platform built to connect memberships, opportunities, services, and student engagement all in one platform</P>
+     <h1>
+        LESS TIME MANAGING SYSTEMS.
+        <br>
+      MORE TIME SUPPORTING STUDENTS.
+      </h1> 
 
-<div class = "">
+      <button>Contact Us</button>  
+        </div>
+<div class = "col-lg-6 text-center">
+     <img src = "sums_iphone.png" width= "420px" class = heroImage>
+    </div>
+</div>
+</div>
+</section>
+<br>
+<!--Diagram-->
+<div class = "text-center">
 <h4>What is S.U.M.S?</h4>
 <p>SUMS connects the essential areas of Students' Union operations into one central platform</p>
 </div>
 
 
-<section class = "container py-5">
-  
+ <section class = "container py-5">
+
 <div class = "row justify-content-center align-items-center text-center">
 <!--Top Section-->
 <div class = "col-12 mb-4">
@@ -80,42 +93,99 @@
 </section>
 
 <br>
-<!--Explanation Cards-->
-<div>
-    <!--Opportunities-->
-<p>Opportunities</p>
-<p>Connect students with opportunities, services, and support while reducing administrative work</p>
- </div>
+<!--Explanations-->
+<section class="card-container py-5">
+    <div class = "row g-4">
 
- <div>
+<div class ="col-md-6 col-lg-3">
 <!--Societies-->
-<p>Societies</p>
-<p>Easily manage information regarding student commitees and activities</p>
+<div class="card shadow-sm border-0 rounded-4 h-100">
+    <div class="card-body text-center">
+
+        <img src="./civil-law-society.png"
+             class="mb-3"
+             width="60"
+             alt="Societies">
+
+        <h5 class="card-title fw-bold">
+            Societies
+        </h5>
+
+        <p class="card-text text-body-secondary">
+            Easily manage information regarding student committees and activities.
+        </p>
+    </div>
+    </div>
  </div>
 
+ <!--Memberships-->
+ <div class ="col-md-6 col-lg-3">
+    <div class = "card shadow-sm border-0 rounded-4 h-100">
+        <div class = "card-body text-center">
+            <img src="./membership-card.png"
+            class="mb-3"
+            width="60"
+            alt="Memberships">
+    
+            <h5 class = "card-title fw-bold">
+                Memberships
+            </h5>
+            <p class = "card-text text-body-secondary">Understand who your students are and how they engage</p>
+        </div>
+        </div>
+    </div>
+
+    <!--Opportunities-->
+<div class ="col-md-6 col-lg-3">
+    <div class = "card shadow-sm border-0 rounded-4 h-100">
+        <div class = "card-body text-center">
+            <img src="./hand-shake.png"
+            class="mb-3"
+            width="60"
+            alt="hand-shake">
+
+    <h5 class = "card-title fw-bold">
+                Opportunities
+            </h5>
+<p class = "card-text text-body-secondary">Connect students with opportunities, services, and support while reducing administrative work</p>
+
+    </div>
+ </div>
+</div>
+
+<div class ="col-md-6 col-lg-3">
+    <div class = "card shadow-sm border-0 rounded-4 h-100">
+        <div class = "card-body text-center">
+            <img src="./report.png"
+            class="mb-3"
+            width="60"
+            alt="report">
+
+            <h5 class = "card-title fw-bold">
+                Reports & Insights
+            </h5>
  <div>
-    <!--Memberships-->
-    <p>Memberships</p>
-    <p>Understand who your students are and what they engage with</p>
+    <p class = "card-text text-body-secondary">Innovate the Students' Union by understanding the data from student engagement patterns</p>
  </div>
 
- <div>
-    <!--Reports & Insights-->
-    <p>Reports & Insights</p>
-    <p>Innovate the Students' Union by understanding the data from student engagement patterns</p>
- </div>
+        </div>
+    </div>
+</div>
+ </section>
+
 <br>
 <!--Why use S.U.M.S?-->
- <div>
+ <div class = "whyContainer text-center">
     <h4>Why should I use S.U.M.S?</h4>
 <P>S.U.M.S. is built specifically by Students' Union for Students' Union. </P>
  <p>Every feauture of the platform is designed to bring memberships, opportunities, activities, support services, and student engagement all in one place. </p>   
 <p>Through integrations such as iPlicit, S.U.M.S. helps streamline financial processes, reduce manual administration and improve operational efficiency.</p>
  <p> That way your team spends LESS TIME MANAGING SYSTEMS, AND MORE TIME SUPPORTING STUDENTS.</p>
  </div>
+
 <br>
 <!--Form-->
-	<form id = "formId" name="formName" class = "formClassName" onsubmit="" action="serverside.php">
+	<form id = "formId" name="formName" class = "formClassName" onsubmit="">
             <label for = "fName">Name: </label>
             <input type = "text" name ="fName" id="fName" value="Name">
 
