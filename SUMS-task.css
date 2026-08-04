@@ -1,4 +1,30 @@
+body {
+    font-family: "poppins", sans-serif;
+}
 
+h1 {
+font-weight: 700;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.navbarItem {
+    font-size: 0.95rem;
+}
+
+a {
+    color:black;
+}
+
+a:hover {
+    color: #47e8d0;
+}
 
 .container {
     background: linear-gradient(135deg,#f0fffc, #e6f7f5);
