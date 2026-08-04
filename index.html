@@ -22,9 +22,10 @@
 
 
     <ul class = "d-flex list-unstyled gap-4 mb-0"> 
-        <li><a href="#" class = "text-decoration-none">About</a></li>
-        <li><a href = "#" class = "text-decoration-none">Features</a></li> </li>
-        <li><a href = "#" class = "text-decoration-none">Contact</a></li>
+        <li><a href="#platform" class = "text-decoration-none">Platform</a></li>
+        <li><a href = "#features" class = "text-decoration-none">Features</a></li> </li>
+        <li><a href = "#benefits" class = "text-decoration-none">Benefits</a></li>
+         <li><a href = "#contact" class = "text-decoration-none">Contact</a></li>
     </ul>
  </div>
 </nav>
@@ -42,7 +43,8 @@
       MORE TIME SUPPORTING STUDENTS.
       </h1> 
 
-      <button>Contact Us</button>  
+      <button class = "btn btn-primary px-4 py-2 rounded-pill">Contact Us</button> 
+
         </div>
 <div class = "col-lg-6 text-center">
      <img src = "sums_iphone.png" width= "420px" class = heroImage>
@@ -51,10 +53,11 @@
 </div>
 </section>
 <br>
-<!--Diagram-->
-<div class = "text-center">
-<h4>What is S.U.M.S?</h4>
-<p>SUMS connects the essential areas of Students' Union operations into one central platform</p>
+<!--What is SUMS & Diagram-->
+<div class = "text-center" id = "platform">
+<h2>What is S.U.M.S?</h2>
+<p>S.U.M.S. is built specifically by Students' Union, for Students' Union. 
+ Every feauture is designed to connect memberships, opportunities, services, and student engagement into one central platform.   </p>
 </div>
 
 
@@ -103,10 +106,10 @@
 
 <br>
 <!--Explanations-->
-<section class="card-container py-5">
+<section class="card-container py-5" id="features">
+    <div class= "container">
     <div class = "row g-4">
-
-<div class ="col-md-6">
+    <div class ="col-md-6">
 <!--Societies-->
 <div class="card shadow-sm border-0 rounded-4 h-100">
     <div class="card-body text-center">
@@ -124,7 +127,7 @@
             Easily manage information regarding student committees and activities.
         </p>
     </div>
-    </div>
+  </div>
  </div>
 
  <!--Memberships-->
@@ -176,7 +179,7 @@
  <div>
     <p class = "card-text text-body-secondary">Innovate the Students' Union by understanding the data from student engagement patterns</p>
  </div>
-
+</div>
         </div>
     </div>
 </div>
@@ -184,61 +187,85 @@
 
 <br>
 <!--Why use S.U.M.S?-->
- <section class = "why-section py-5">
+ <section class = "why-section py-5" id="benefits">
     <div class = "container text-center">
     <h2>Why should I use S.U.M.S?</h2>
- 
-<P>
-S.U.M.S. is built specifically by Students' Union for Students' Union. 
- Every feauture of the platform is designed to bring memberships, opportunities, activities, support services, and student engagement all in one place.   
-Through integrations such as iPlicit, S.U.M.S. helps streamline financial processes, reduce manual administration and improve operational efficiency.
-</P>
  </div>
 
- <div class="container py-5">
+ <div class="container py-5" >
     <div class = "row align-items-center">
         <div class="challenges col-md-6">
 <h3>Current Challenge</h3>
-<p>Managing financal data across multiple systems</p>
- <p>Spending time on manual administration</p>
-<p>Making rash decisions without a complete picture</p>
+<ul class = "list-unstyled benefit-section">
+    <li>
+     <img src = "close.png" alt="error-icon" width="16">  
+      Financal data across multiple systems 
+    </li>
+    <li>
+        <img src = "close.png" alt="error-icon" width="16">
+        Time-consuming manual administration
+    </li>
+    <li>
+        <img src = "close.png" alt="error-icon" width="16">
+        Limited visibiility of student engagement
+    </li>
+</ul>
+
         </div>
 <div class = "solutions col-md-6">
     <h3>The SUMS Solution</h3>
-  <p>Integrration with iPlicit to automate financial work flows</p>
-<p>Smooth processes that reduce repetitive tasks</p>
-<p>Data-driven insights to better understand students</p>  
+    <ul class = "list-unstyled benefit-section">
+        <li>
+            <img src = "mark.png" alt="correct-icon" width="20">
+            Connected finance though iPlicit integration
+        </li>
+<li>
+    <img src = "mark.png" alt="correct-icon" width="20">
+    Streamlined workflows with less manual work
+</li>
+<li>
+<img src = "mark.png" alt="correct-icon" width="20">
+Data-driven insights for improved informed decisions
+</li>
+    </ul>
+  
 </div>
     </div>
  </div>
 
 <div class="final-message text-center"> 
-    <p>That way your team spends</p>
-<h2> LESS TIME MANAGING SYSTEMS. 
+<h1> LESS TIME MANAGING SYSTEMS. 
     <br>
     AND MORE TIME SUPPORTING STUDENTS.
-</h2>
- 
+</h1>
 </div>
 </section>
 
-<br>
 <!--Form-->
-	<form id = "formId" name="formName" class = "formClassName" onsubmit="">
-            <label for = "fName">Name: </label>
-            <input type = "text" name ="fName" id="fName" value="Name">
+<section id = "contact"> 
+	<form id = "formId"  class = "formClass container py-3" onsubmit="submitForm(event)">
+  <!--Send us a message-->
+<h2 class = "text-center">Send us a message</h2>  
+           <div class = "mb-3"> 
+            <label for = "fName"></label>
+            <input type = "text" class = "form-control" placeholder="Name">
+        </div>
 
-            <br>
-            <label for = "email">Email: </label>
-            <input type = "text" name = "email" id = "email" value="Email">
+            <div class = "mb-3"> 
+            <label for = "email" class = "label-email"></label>
+            <input type = "email" class = "form-control"  placeholder="Email">
+            </div>
 
-            <br>
-            <label for = "message">Message: </label>
-            <input type = "text" name = "message" id="message" value="Message">
-            <br>
-            <input type="submit" value="Submit">
+            <div class = "mb-3">
+            <label for = "message" class="message-label"></label>
+            <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+            </div>
+
+           <button type = "submit" class="btn btn-primary px-4 py-2 rounded-pill">
+            Request a Demo
+           </button>
             </form>
-
+</section>
 
 <!--Bootstrap integration with JavaScript-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
