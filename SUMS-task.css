@@ -7,10 +7,28 @@ body {
     background:#F8FAFC;
 }
 
+/*Mobile Phone responsiveness*/
+@media only screen and (max-width: 554px) and (orientation: portrait) { /*554px or lower*/
+    /* For mobile phones: */
+    .container {
+     width: 100%;   
+    }
+   
+  }
+
+  @media only screen and (min-width: 758px) and (orientation: landscape) {
+    /* For mobile phones in landscape mode */
+    .container {
+      width: 100%;   
+    }
+   
+  }
+
 
 h1, h2, h3 {
 font-weight: 700;
 }
+
 
 .hero-text {
     max-width: 500px;
