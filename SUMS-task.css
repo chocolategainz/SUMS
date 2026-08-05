@@ -18,10 +18,6 @@ body {
         justify-content: center;
         gap: 1rem !important;
     }
-    .logo-center {
-        width: 180px;
-        height:180px;
-    }
 }
 
 h1, h2, h3 {
@@ -114,7 +110,7 @@ max-width: 550px;
 
     border-radius:50%;
 
-    background:#58d7c4;
+    background: #0f72a0;
 
     display:flex;
     justify-content:center;
