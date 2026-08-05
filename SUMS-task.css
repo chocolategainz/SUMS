@@ -121,12 +121,13 @@ max-width: 550px;
     align-items:center;
 
     box-shadow:0 15px 35px rgba(0,0,0,0.15);
+    overflow: hidden;
 }
 
 @media (max-width: 991px) {
     .logo-center {
         width: 180px;
-        height: 180px;
+        height: auto; /*180px*/
     }
 }
 
