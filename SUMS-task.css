@@ -7,23 +7,22 @@ body {
     background:#F8FAFC;
 }
 
-/*Mobile Phone responsiveness*/
-@media only screen and (max-width: 554px) and (orientation: portrait) { /*554px or lower*/
-    /* For mobile phones: */
-    .container {
-     width: 100%;   
-    }
-   
-  }
 
-  @media only screen and (min-width: 758px) and (orientation: landscape) {
-    /* For mobile phones in landscape mode */
-    .container {
-      width: 100%;   
+/*Mobile Responsiveness*/
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
     }
-   
-  }
-
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem !important;
+    }
+    .logo-center {
+        width: 180px;
+        height:180px;
+    }
+}
 
 h1, h2, h3 {
 font-weight: 700;
@@ -78,6 +77,7 @@ max-width: 550px;
 }
 
 .heroImage {
+    width:420px;
     max-width: 100%;
 }
 
@@ -163,6 +163,10 @@ max-width: 550px;
 
 .stats-section h3 {
     font-size: 3rem
+}
+
+.final-message h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
 }
 
 .formClass {
